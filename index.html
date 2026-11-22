@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#14110f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#14110f;--panel:#1d1916;--ink:#f3ede4;--muted:#b9ae9f;--gold:#e8b86a;--line:#2e2823}
 *{box-sizing:border-box}
@@ -81,6 +81,23 @@ section{padding:110px 0}
 .card .n{font-family:"Playfair Display",serif;color:var(--gold);font-size:2.2rem;line-height:1;margin-bottom:14px}
 .card h3{font-size:1.35rem}
 .card p{color:var(--muted);margin:0;font-size:.96rem}
+
+/* showreel player (placeholder until the demo long is ready: swap .player-ph for
+   <video controls preload="metadata" playsinline poster="img/....jpg"><source src="video/....mp4" type="video/mp4"></video>) */
+.showreel{margin-top:46px}
+.showreel .cap{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.showreel .cap h3{font-size:1.35rem;margin:0}
+.showreel .cap span{color:var(--muted);font-size:.9rem}
+.player{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#0c0a09;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.player video{width:100%;height:100%;display:block;object-fit:cover;background:#000}
+.player-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;
+  background:radial-gradient(ellipse at center,rgba(232,184,106,.10),transparent 65%),linear-gradient(135deg,#1d1916,#0f0d0b)}
+.player-ph .play{width:84px;height:84px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center}
+.player-ph .play:after{content:"";margin-left:6px;border-style:solid;border-width:15px 0 15px 25px;border-color:transparent transparent transparent var(--gold)}
+.player-ph p{margin:0;color:var(--muted);font-size:.95rem;letter-spacing:.18em;text-transform:uppercase}
+.player-bar{position:absolute;left:0;right:0;bottom:0;height:44px;display:flex;align-items:center;gap:14px;padding:0 18px;background:linear-gradient(transparent,rgba(0,0,0,.6));color:var(--muted);font-size:.8rem}
+.player-bar i{flex:1;height:3px;border-radius:2px;background:rgba(255,255,255,.18)}
+@media(max-width:600px){.player-ph{gap:10px}.player-ph .play{width:56px;height:56px}.player-ph .play:after{border-width:10px 0 10px 17px;margin-left:4px}.player-ph p{font-size:.72rem}.player-bar{height:34px;padding:0 12px;font-size:.7rem}}
 
 /* offer */
 .offer{background:linear-gradient(rgba(20,17,15,.82),rgba(20,17,15,.9)),url(img/demoGlampingBlueHour.jpg) center/cover;text-align:center}
@@ -178,12 +195,19 @@ footer a{color:#8d8276}
 <section id="how"><div class="wrap">
   <div class="head reveal">
     <div class="eyebrow">What you get</div>
-    <h2>Made for where your customers are. <em style="color:var(--gold);font-style:italic;font-weight:500">Online.</em></h2>
+    <h2>Made for where your customers are. <em style="color:var(--gold);font-family:Montserrat,Arial,sans-serif;font-style:italic;font-weight:600;letter-spacing:.01em">Online.</em></h2>
   </div>
   <div class="cards">
     <div class="card reveal"><div class="n">01</div><h3>Promo images</h3><p>Cinematic stills of your products and venue in square, portrait and widescreen sizes, ready for Instagram, Facebook, Google and your website.</p></div>
     <div class="card reveal"><div class="n">02</div><h3>Short videos</h3><p>Vertical 9:16 videos for TikTok, YouTube Shorts and Instagram Reels, with music and a branded end card.</p></div>
     <div class="card reveal"><div class="n">03</div><h3>Website videos</h3><p>Short widescreen videos for your homepage, booking page or YouTube, planned scene by scene around what makes you special.</p></div>
+  </div>
+  <div class="showreel reveal">
+    <div class="cap"><h3>See a website video</h3><span>Widescreen 16:9 · 720p</span></div>
+    <div class="player">
+      <div class="player-ph" aria-label="Video coming soon"><div class="play"></div><p>Showreel coming soon</p></div>
+      <div class="player-bar" aria-hidden="true">0:00<i></i>0:38</div>
+    </div>
   </div>
 </div></section>
 
