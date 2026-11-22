@@ -7,7 +7,7 @@
 <meta name="description" content="Ask Franklin Media makes cinematic promotional images and videos for small, independent UK businesses, built around your own products, venue and branding. Free promo images to start, and promo videos with no upfront cost: you pay what you think they're worth.">
 <link rel="canonical" href="https://askfranklinmedia.co.uk/">
 <meta property="og:title" content="Ask Franklin Media">
-<meta property="og:description" content="Cinematic promo images and videos for independent UK businesses.">
+<meta property="og:description" content="Cinematic promo images and videos for independent UK businesses. No price list, no upfront cost: see it first, then pay what it's worth.">
 <meta property="og:image" content="https://askfranklinmedia.co.uk/img/demoHeroCafeGoldenHour.jpg">
 <meta property="og:url" content="https://askfranklinmedia.co.uk/">
 <meta name="theme-color" content="#14110f">
@@ -84,10 +84,24 @@ section{padding:110px 0}
 
 /* offer */
 .offer{background:linear-gradient(rgba(20,17,15,.82),rgba(20,17,15,.9)),url(img/demoGlampingBlueHour.jpg) center/cover;text-align:center}
-.offer .wrap{max-width:780px}
+.offer .wrap{max-width:980px}
+.offer h2{font-size:clamp(2.4rem,6vw,4.2rem)}
+.offer h2 em{color:var(--gold);font-style:italic;font-weight:500}
+.offer .lead{max-width:720px;margin:0 auto;font-size:1.15rem}
+.offer .lead b{color:var(--ink)}
+.promise{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 34px;text-align:left}
+@media(max-width:860px){.promise{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.promise{grid-template-columns:1fr}}
+.promise div{background:rgba(29,25,22,.85);border:1px solid #4a3f33;border-radius:10px;padding:20px}
+.promise b{display:block;color:var(--gold);font-family:"Playfair Display",serif;font-size:1.1rem;margin-bottom:6px}
+.promise span{color:#cfc4b6;font-size:.9rem;line-height:1.5}
+.offer .why{max-width:680px;margin:0 auto 34px;font-style:italic;color:#cfc4b6;font-size:1rem}
+.pwiw-badge{margin-top:30px;display:inline-block;border:1px solid rgba(232,184,106,.55);background:rgba(20,17,15,.6);backdrop-filter:blur(6px);border-radius:12px;padding:12px 18px;font-size:.95rem;color:#e6ddd0;max-width:560px}
+.pwiw-badge b{color:var(--gold)}
 .offer p{color:#ddd3c6;font-size:1.08rem}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0 44px;text-align:left}
-@media(max-width:720px){.steps{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:44px 0 40px;text-align:left}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
 .step{border-top:2px solid var(--gold);padding-top:16px}
 .step b{display:block;font-family:"Playfair Display",serif;font-size:1.15rem;margin-bottom:6px}
 .step span{color:#cfc4b6;font-size:.94rem}
@@ -112,7 +126,8 @@ footer a{color:#8d8276}
   <a class="logo" href="#">Ask Franklin <span>Media</span></a>
   <ul>
     <li><a href="#work">Work</a></li>
-    <li><a href="#how">How it works</a></li>
+    <li><a href="#how">What you get</a></li>
+    <li><a href="#offer">Pay what it's worth</a></li>
     <li><a href="#contact" class="btn" style="padding:9px 20px;color:#1a140c">Get in touch</a></li>
   </ul>
 </div></nav>
@@ -123,8 +138,9 @@ footer a{color:#8d8276}
   <p>Cinematic promotional images and short videos for independent businesses, built around your own products, venue and branding, ready for your website and social media.</p>
   <div class="ctas">
     <a class="btn" href="#offer">Get free promo images</a>
-    <a class="btn ghost" href="#work">See the style</a>
+    <a class="btn ghost" href="#offer">How pay what it's worth works</a>
   </div>
+  <div class="pwiw-badge"><b>No price list. No upfront cost.</b> See your video first, then pay what you think it's worth.</div>
 </div></header>
 
 <section><div class="wrap intro">
@@ -150,9 +166,9 @@ footer a{color:#8d8276}
   <div class="gallery">
     <figure class="g1 reveal"><img src="img/demoGlampingBlueHour.jpg" alt="A glowing bell tent at blue hour in a Yorkshire Dales meadow with a fire pit" loading="lazy"><figcaption>Glamping · blue hour in the Dales</figcaption></figure>
     <figure class="g2 reveal"><img src="img/demoBakeryDawnLoaves.jpg" alt="Sourdough loaves and croissants on a floured bakery bench at dawn" loading="lazy"><figcaption>Bakery · first bake of the day</figcaption></figure>
-    <figure class="g3 reveal"><img src="img/demoFloristBouquet.jpg" alt="A florist tying a bouquet of peonies and ranunculus" loading="lazy"><figcaption>Florist · hand-tied</figcaption></figure>
+    <figure class="g3 reveal"><img src="img/demoFloristBouquetOnBench.jpg" alt="A hand-tied bouquet of peonies, ranunculus and eucalyptus resting on a florist's workbench" loading="lazy"><figcaption>Florist · hand-tied</figcaption></figure>
     <figure class="g4 reveal"><img src="img/demoBarberFade.jpg" alt="A barber giving a skin fade in a vintage barbershop" loading="lazy"><figcaption>Barber · the perfect fade</figcaption></figure>
-    <figure class="g5 reveal"><img src="img/demoDeliSharingBoard.jpg" alt="Friends sharing a deli board of cheese, charcuterie and bread" loading="lazy"><figcaption>Deli · sharing board</figcaption></figure>
+    <figure class="g5 reveal"><img src="img/demoDeliSimpleBoard.jpg" alt="An olive-wood board with farmhouse cheese, ham and grapes on a slate counter" loading="lazy"><figcaption>Deli · simply local</figcaption></figure>
     <figure class="g6 reveal"><img src="img/demoCarDetailingSunset.jpg" alt="A classic green car being hand-polished at sunset" loading="lazy"><figcaption>Car detailing · sunset shine</figcaption></figure>
     <figure class="g7 reveal"><img src="img/demoHeroCafeGoldenHour.jpg" alt="A cosy independent café at golden hour with a barista pouring latte art" loading="lazy"><figcaption>Café · golden hour</figcaption></figure>
   </div>
@@ -172,21 +188,29 @@ footer a{color:#8d8276}
 </div></section>
 
 <section id="offer" class="offer"><div class="wrap reveal">
-  <div class="eyebrow">Try us first</div>
-  <h2>Free promo images. Videos, you name the price.</h2>
-  <p>We'd rather show you than tell you. We start with a set of free promo images made for your business. If you'd like a video too, there's no upfront cost: you pay what you think it's worth.</p>
+  <div class="eyebrow">Our pricing</div>
+  <h2>Pay what it's <em>worth.</em></h2>
+  <p class="lead">You won't find a price list here, and that's on purpose. We don't think you should pay for a video before you've seen it. So we make it first, you watch it, and then <b>you decide what it's worth to your business.</b></p>
   <div class="steps">
     <div class="step"><b>1. Say hello</b><span>Email us your business name and your website or social media.</span></div>
-    <div class="step"><b>2. Free promo images</b><span>We make promo images around your real products, venue and branding and send them over, free.</span></div>
-    <div class="step"><b>3. Your video, your price</b><span>Want a video? Choose vertical for social media or widescreen for your website. No upfront cost: once you've seen it, pay what you think it's worth through a secure Stripe link.</span></div>
+    <div class="step"><b>2. Free promo images</b><span>We start with a set of promo images made around your real products, venue and branding, free, so you can see the quality.</span></div>
+    <div class="step"><b>3. We make your video</b><span>Vertical for social media or widescreen for your website. No deposit, no contract, nothing to pay up front.</span></div>
+    <div class="step"><b>4. You name the price</b><span>Happy with it? Pay whatever you think it's worth through a secure Stripe link. Any amount, your call.</span></div>
   </div>
-  <a class="btn" href="mailto:askfranklinmedia@gmail.com?subject=Free%20promo%20images&amp;body=Hi%20Ask%20Franklin%20Media%2C%0A%0ABusiness%20name%3A%20%0AWebsite%20or%20social%20media%3A%20%0A%0AThanks!">Get your free promo images</a>
+  <div class="promise">
+    <div><b>No upfront cost</b><span>Nothing to pay until you've seen the finished video.</span></div>
+    <div><b>No minimum</b><span>A small café and a busy restaurant shouldn't pay the same. You set the figure.</span></div>
+    <div><b>No awkward haggling</b><span>No quotes or invoices to chase. One secure Stripe link, any amount.</span></div>
+    <div><b>No catch</b><span>If it isn't right for you, tell us. You're not obliged to pay a penny.</span></div>
+  </div>
+  <p class="why">Why do it this way? Because we're confident in the work, and we'd rather earn a long-term relationship with independent businesses than sell you a package.</p>
+  <a class="btn" href="mailto:askfranklinmedia@gmail.com?subject=Free%20promo%20images&amp;body=Hi%20Ask%20Franklin%20Media%2C%0A%0ABusiness%20name%3A%20%0AWebsite%20or%20social%20media%3A%20%0A%0AThanks!">Start with free promo images</a>
 </div></section>
 
 <section id="contact"><div class="wrap reveal">
   <div class="eyebrow">Get in touch</div>
   <h2>Let's make something beautiful.</h2>
-  <p>Questions, ideas or a project in mind? Drop us an email and we'll get back to you quickly.</p>
+  <p>Questions, ideas or a project in mind? Drop us an email and we'll get back to you quickly. Remember: no price list, no upfront cost. You see it first, then pay what it's worth.</p>
   <a class="mail" href="mailto:askfranklinmedia@gmail.com">askfranklinmedia@gmail.com</a>
   <p>Based in South Yorkshire, working with independent businesses across the UK.</p>
 </div></section>
