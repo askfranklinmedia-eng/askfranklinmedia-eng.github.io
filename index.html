@@ -3,23 +3,205 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Franklin Media</title>
+<title>Franklin Media | Cinematic promo images &amp; videos for independent businesses</title>
+<meta name="description" content="Franklin Media makes cinematic promotional images and videos for small, independent UK businesses, built around your own products, venue and branding. Your first promo video is free, then pay what you think it's worth.">
+<link rel="canonical" href="https://askfranklinmedia.co.uk/">
+<meta property="og:title" content="Franklin Media">
+<meta property="og:description" content="Cinematic promo images and videos for independent UK businesses.">
+<meta property="og:image" content="https://askfranklinmedia.co.uk/img/demoHeroCafeGoldenHour.jpg">
+<meta property="og:url" content="https://askfranklinmedia.co.uk/">
+<meta name="theme-color" content="#14110f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Georgia,serif;background:#111;color:#eee;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
-main{max-width:640px;padding:40px 24px}
-h1{font-size:2.6em;letter-spacing:.04em;margin:0 0 .3em}
-p{font-family:Arial,sans-serif;line-height:1.6;color:#ccc}
-a{color:#e8b86a}
-footer{margin-top:40px;font-size:.85em;font-family:Arial,sans-serif;color:#888}
+:root{--bg:#14110f;--panel:#1d1916;--ink:#f3ede4;--muted:#b9ae9f;--gold:#e8b86a;--line:#2e2823}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,Arial,sans-serif;line-height:1.65;font-size:17px}
+a{color:var(--gold)}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:700;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+.btn{display:inline-block;background:var(--gold);color:#1a140c;text-decoration:none;font-weight:600;padding:15px 30px;border-radius:999px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#f2c983}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid #5a5048}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:10;transition:background .3s}
+nav.solid{background:rgba(20,17,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:"Playfair Display",serif;font-size:1.35rem;color:var(--ink);text-decoration:none;letter-spacing:.03em}
+.logo span{color:var(--gold)}
+nav ul{list-style:none;display:flex;gap:30px;margin:0;padding:0}
+nav ul a{color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:500}
+nav ul a:hover{color:var(--gold)}
+@media(max-width:720px){nav ul li:not(:last-child){display:none}}
+
+/* hero */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;position:relative;
+  background:url(img/demoHeroCafeGoldenHour.jpg) center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,17,15,.55) 0%,rgba(20,17,15,0) 18%),linear-gradient(90deg,rgba(20,17,15,.78) 0%,rgba(20,17,15,.45) 55%,rgba(20,17,15,.1) 100%),linear-gradient(180deg,rgba(20,17,15,0) 55%,rgba(20,17,15,.97) 100%)}
+.hero h1,.hero p,.hero .eyebrow{text-shadow:0 2px 18px rgba(0,0,0,.55)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:90px;padding-top:120px}
+.hero h1{font-size:clamp(2.5rem,6.5vw,5rem);max-width:15ch}
+.hero h1 em{color:var(--gold);font-style:italic;font-weight:500}
+.hero p{max-width:560px;font-size:1.12rem;color:#e6ddd0;margin:0 0 30px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+section{padding:110px 0}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.intro p{color:var(--muted)}
+@media(max-width:860px){.intro{grid-template-columns:1fr;gap:30px}}
+.for{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.for span{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.86rem;color:var(--ink);background:var(--panel)}
+
+/* gallery */
+#work{background:var(--panel)}
+.head{max-width:640px;margin-bottom:50px}
+.head p{color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:6px;background:#000}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;font-size:.85rem;
+  background:linear-gradient(transparent,rgba(0,0,0,.75));color:#eee}
+.g1{grid-column:span 4;aspect-ratio:16/9}.g2{grid-column:span 2}.g2 img{position:absolute;inset:0}.g3{grid-column:span 2;aspect-ratio:4/5}
+.g4{grid-column:span 2;aspect-ratio:4/5}.g5{grid-column:span 2;aspect-ratio:4/5}.g6{grid-column:span 3;aspect-ratio:16/10}.g7{grid-column:span 3;aspect-ratio:16/10}
+@media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}.gallery figure{grid-column:span 1!important;aspect-ratio:4/5!important}.gallery .g1,.gallery .g6,.gallery .g7{grid-column:span 2!important;aspect-ratio:16/10!important}}
+.note{font-size:.82rem;color:#8d8276;margin-top:22px}
+
+/* what you get */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:34px 30px}
+.card .n{font-family:"Playfair Display",serif;color:var(--gold);font-size:2.2rem;line-height:1;margin-bottom:14px}
+.card h3{font-size:1.35rem}
+.card p{color:var(--muted);margin:0;font-size:.96rem}
+
+/* offer */
+.offer{background:linear-gradient(rgba(20,17,15,.82),rgba(20,17,15,.9)),url(img/demoGlampingBlueHour.jpg) center/cover;text-align:center}
+.offer .wrap{max-width:780px}
+.offer p{color:#ddd3c6;font-size:1.08rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0 44px;text-align:left}
+@media(max-width:720px){.steps{grid-template-columns:1fr}}
+.step{border-top:2px solid var(--gold);padding-top:16px}
+.step b{display:block;font-family:"Playfair Display",serif;font-size:1.15rem;margin-bottom:6px}
+.step span{color:#cfc4b6;font-size:.94rem}
+
+/* contact */
+#contact{text-align:center}
+#contact .wrap{max-width:680px}
+#contact p{color:var(--muted)}
+.mail{font-family:"Playfair Display",serif;font-size:clamp(1.3rem,3.6vw,2rem);text-decoration:none;display:inline-block;margin:10px 0 30px;border-bottom:1px solid #6b5a3f}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#8d8276;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#8d8276}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.gallery img{transition:none}}
 </style>
 </head>
 <body>
-<main>
-<h1>Franklin Media</h1>
-<p>Cinematic promotional images and videos for small, independent UK businesses: cafés, bakeries, holiday cottages, salons, shops and trades.</p>
-<p>Based in South Yorkshire, UK.</p>
-<p>Contact: <a href="mailto:askfranklinmedia@gmail.com">askfranklinmedia@gmail.com</a></p>
-<footer><a href="privacy.html">Privacy policy</a></footer>
-</main>
+
+<nav id="nav"><div class="wrap">
+  <a class="logo" href="#">Franklin <span>Media</span></a>
+  <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#contact" class="btn" style="padding:9px 20px;color:#1a140c">Get in touch</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Promo images &amp; videos · South Yorkshire, UK</div>
+  <h1>Make your business look like it's <em>in the movies.</em></h1>
+  <p>Cinematic promotional images and short videos for independent businesses, built around your own products, venue and branding, ready for your website and social media.</p>
+  <div class="ctas">
+    <a class="btn" href="#offer">Get a free promo video</a>
+    <a class="btn ghost" href="#work">See the style</a>
+  </div>
+</div></header>
+
+<section><div class="wrap intro">
+  <div class="reveal">
+    <div class="eyebrow">What we do</div>
+    <h2>Scroll-stopping content, without the photoshoot.</h2>
+  </div>
+  <div class="reveal">
+    <p>Small businesses are competing with big brands on every feed. Franklin Media gives you striking, movie-still quality images and videos that look like your business at its very best: your actual products, your venue, your logo and colours.</p>
+    <p>No studio day, no models to book and no disruption to your week. Send us what you've got, or we'll work from your website and social media, and we'll do the rest.</p>
+    <div class="for">
+      <span>Cafés</span><span>Bakeries</span><span>Restaurants</span><span>Delis</span><span>Florists</span><span>Barbers &amp; salons</span><span>Holiday cottages</span><span>Glamping</span><span>Car detailers</span><span>Shops &amp; trades</span>
+    </div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="head reveal">
+    <div class="eyebrow">The style</div>
+    <h2>Light, mood and story.</h2>
+    <p>Every piece is planned like a film shot: the right time of day, the right angle, the right atmosphere for your brand. Here's a taste of the look.</p>
+  </div>
+  <div class="gallery">
+    <figure class="g1 reveal"><img src="img/demoGlampingBlueHour.jpg" alt="A glowing bell tent at blue hour in a Yorkshire Dales meadow with a fire pit" loading="lazy"><figcaption>Glamping · blue hour in the Dales</figcaption></figure>
+    <figure class="g2 reveal"><img src="img/demoBakeryDawnLoaves.jpg" alt="Sourdough loaves and croissants on a floured bakery bench at dawn" loading="lazy"><figcaption>Bakery · first bake of the day</figcaption></figure>
+    <figure class="g3 reveal"><img src="img/demoFloristBouquet.jpg" alt="A florist tying a bouquet of peonies and ranunculus" loading="lazy"><figcaption>Florist · hand-tied</figcaption></figure>
+    <figure class="g4 reveal"><img src="img/demoBarberFade.jpg" alt="A barber giving a skin fade in a vintage barbershop" loading="lazy"><figcaption>Barber · the perfect fade</figcaption></figure>
+    <figure class="g5 reveal"><img src="img/demoDeliSharingBoard.jpg" alt="Friends sharing a deli board of cheese, charcuterie and bread" loading="lazy"><figcaption>Deli · sharing board</figcaption></figure>
+    <figure class="g6 reveal"><img src="img/demoCarDetailingSunset.jpg" alt="A classic green car being hand-polished at sunset" loading="lazy"><figcaption>Car detailing · sunset shine</figcaption></figure>
+    <figure class="g7 reveal"><img src="img/demoHeroCafeGoldenHour.jpg" alt="A cosy independent café at golden hour with a barista pouring latte art" loading="lazy"><figcaption>Café · golden hour</figcaption></figure>
+  </div>
+  <p class="note">Style examples for illustration. Your images are made from your own products, venue and branding.</p>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="head reveal">
+    <div class="eyebrow">What you get</div>
+    <h2>Made for where your customers are.</h2>
+  </div>
+  <div class="cards">
+    <div class="card reveal"><div class="n">01</div><h3>Promo images</h3><p>Cinematic stills of your products and venue in square, portrait and widescreen sizes, ready for Instagram, Facebook, Google and your website.</p></div>
+    <div class="card reveal"><div class="n">02</div><h3>Short videos</h3><p>Vertical 9:16 videos for TikTok, YouTube Shorts and Instagram Reels, with music and a branded end card.</p></div>
+    <div class="card reveal"><div class="n">03</div><h3>Website films</h3><p>Widescreen videos for your homepage, booking page or YouTube, planned scene by scene around what makes you special.</p></div>
+  </div>
+</div></section>
+
+<section id="offer" class="offer"><div class="wrap reveal">
+  <div class="eyebrow">Try it first</div>
+  <h2>Your first promo video is free.</h2>
+  <p>We'd rather show you than tell you. We'll make a short promo video for your business before you spend a penny.</p>
+  <div class="steps">
+    <div class="step"><b>1. Say hello</b><span>Email us your business name and whether you'd like a vertical video for social media or a widescreen one for your website.</span></div>
+    <div class="step"><b>2. We make it</b><span>We build it around your real products, venue and branding and send it over.</span></div>
+    <div class="step"><b>3. You decide</b><span>Pay whatever you think it's worth through a secure Stripe link. If you like it, we can talk about more.</span></div>
+  </div>
+  <a class="btn" href="mailto:askfranklinmedia@gmail.com?subject=Free%20promo%20video&amp;body=Hi%20Franklin%20Media%2C%0A%0ABusiness%20name%3A%20%0AWebsite%20or%20social%20media%3A%20%0AVideo%20style%20(vertical%20for%20social%20%2F%20widescreen%20for%20website)%3A%20%0A%0AThanks!">Claim your free video</a>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+  <div class="eyebrow">Get in touch</div>
+  <h2>Let's make something beautiful.</h2>
+  <p>Questions, ideas or a project in mind? Drop us an email and we'll get back to you quickly.</p>
+  <a class="mail" href="mailto:askfranklinmedia@gmail.com">askfranklinmedia@gmail.com</a>
+  <p>Based in South Yorkshire, working with independent businesses across the UK.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© <span id="yr">2026</span> Franklin Media · South Yorkshire, UK</span>
+  <a href="privacy.html">Privacy policy</a>
+</div></footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>40),{passive:true});
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
