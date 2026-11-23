@@ -71,7 +71,8 @@ section{padding:110px 0}
   background:linear-gradient(transparent,rgba(0,0,0,.75));color:#eee}
 .g1{grid-column:span 4;aspect-ratio:16/9}.g2{grid-column:span 2}.g2 img{position:absolute;inset:0}.g3{grid-column:span 2;aspect-ratio:4/5}
 .g4{grid-column:span 2;aspect-ratio:4/5}.g5{grid-column:span 2;aspect-ratio:4/5}.g6{grid-column:span 3;aspect-ratio:16/10}.g7{grid-column:span 3;aspect-ratio:16/10}
-@media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}.gallery figure{grid-column:span 1!important;aspect-ratio:4/5!important}.gallery .g1,.gallery .g6,.gallery .g7{grid-column:span 2!important;aspect-ratio:16/10!important}}
+.g8{grid-column:span 4;aspect-ratio:16/9}.g9{grid-column:span 2}.g9 img{position:absolute;inset:0}.g10,.g11,.g12{grid-column:span 2;aspect-ratio:4/5}
+@media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}.gallery figure{grid-column:span 1!important;aspect-ratio:4/5!important}.gallery .g1,.gallery .g6,.gallery .g7,.gallery .g8{grid-column:span 2!important;aspect-ratio:16/10!important}}
 .note{font-size:.82rem;color:#8d8276;margin-top:22px}
 
 /* what you get */
@@ -84,7 +85,7 @@ section{padding:110px 0}
 
 /* showreel player (placeholder until the demo long is ready: swap .player-ph for
    <video controls preload="metadata" playsinline poster="img/....jpg"><source src="video/....mp4" type="video/mp4"></video>) */
-.showreel{margin-top:46px}
+.showreel{margin-top:46px}.showreel[hidden]{display:none!important}
 .showreel .cap{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px;flex-wrap:wrap}
 .showreel .cap h3{font-size:1.35rem;margin:0}
 .showreel .cap span{color:var(--muted);font-size:.9rem}
@@ -188,6 +189,11 @@ footer a{color:#8d8276}
     <figure class="g5 reveal"><img src="img/demoDeliSimpleBoard.jpg" alt="An olive-wood board with farmhouse cheese, ham and grapes on a slate counter" loading="lazy"><figcaption>Deli · simply local</figcaption></figure>
     <figure class="g6 reveal"><img src="img/demoCarDetailingSunset.jpg" alt="A classic green car being hand-polished at sunset" loading="lazy"><figcaption>Car detailing · sunset shine</figcaption></figure>
     <figure class="g7 reveal"><img src="img/demoHeroCafeGoldenHour.jpg" alt="A cosy independent café at golden hour with a barista pouring latte art" loading="lazy"><figcaption>Café · golden hour</figcaption></figure>
+    <figure class="g8 reveal"><img src="img/demoFarmShopSunriseMist.jpg" alt="A farm shop produce stand with crates of apples and squash beside a kitchen garden, misty Peak District hills at sunrise" loading="lazy"><figcaption>Farm shop · Peak District sunrise</figcaption></figure>
+    <figure class="g9 reveal"><img src="img/demoCountryPubFireside.jpg" alt="A pint of amber ale on an oak table beside a log fire in a beamed country pub" loading="lazy"><figcaption>Country pub · by the fire</figcaption></figure>
+    <figure class="g10 reveal"><img src="img/demoRoasteryMorningLight.jpg" alt="Freshly roasted coffee beans pouring from a copper roaster in a stone mill, lit by a shaft of morning light" loading="lazy"><figcaption>Coffee roastery · morning roast</figcaption></figure>
+    <figure class="g11 reveal"><img src="img/demoPotteryWheelHands.jpg" alt="A potter's clay-covered hands shaping a bowl on a spinning wheel in a rustic studio" loading="lazy"><figcaption>Pottery · made by hand</figcaption></figure>
+    <figure class="g12 reveal"><img src="img/demoChocolatierTruffles.jpg" alt="A row of hand-finished chocolate truffles and a broken dark chocolate bar on a marble counter under a warm lamp" loading="lazy"><figcaption>Chocolatier · small batch</figcaption></figure>
   </div>
   <p class="note">Style examples for illustration. Your images are made from your own products, venue and branding.</p>
 </div></section>
@@ -202,7 +208,7 @@ footer a{color:#8d8276}
     <div class="card reveal"><div class="n">02</div><h3>Short videos</h3><p>Vertical 9:16 videos for TikTok, YouTube Shorts and Instagram Reels, with music and a branded end card.</p></div>
     <div class="card reveal"><div class="n">03</div><h3>Website videos</h3><p>Short widescreen videos for your homepage, booking page or YouTube, planned scene by scene around what makes you special.</p></div>
   </div>
-  <div class="showreel reveal">
+  <div class="showreel reveal" hidden>
     <div class="cap"><h3>See a website video</h3><span>Widescreen 16:9 · 720p</span></div>
     <div class="player">
       <div class="player-ph" aria-label="Video coming soon"><div class="play"></div><p>Showreel coming soon</p></div>
@@ -224,7 +230,7 @@ footer a{color:#8d8276}
   <div class="promise">
     <div><b>No upfront cost</b><span>Nothing to pay until you've seen the finished video.</span></div>
     <div><b>Built to bring customers in</b><span>Once you see the quality, you'll see the potential: scroll-stopping video that puts your business in front of more people and brings more customers through your door.</span></div>
-    <div><b>A stress-free experience</b><span>Simple from start to finish. When you're happy, it's one secure Stripe link and you're done.</span></div>
+    <div><b>A stress-free experience</b><span>Simple from start to finish. When you're happy, it's one secure Stripe link and you're done. Want more videos next month? Just Ask Franklin Media.</span></div>
     <div><b>No catch</b><span>If it isn't right for you, tell us. You're not obliged to pay a penny.</span></div>
   </div>
   <p class="why">Why do it this way? Because we're confident in the work, and we'd rather earn a long-term relationship with independent businesses than sell you a package.</p>
